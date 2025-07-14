@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🛍 My Shop</h1>
+    <nav>
+      <span id="welcomeMsg"></span>
+      <a href="login.html" id="authLink">🔐 Login</a>
+      <a href="cart.html">🛒 Cart (<span id="cartCount">0</span>)</a>
+      <span id="wishlistCount">❤ 0</span>
+    </nav>
+  </header>
+
+  <div class="filter-sort">
+    <select id="sort">
+      <option value="">Sort By</option>
+      <option value="low">Price: Low to High</option>
+      <option value="high">Price: High to Low</option>
+    </select>
+    <input type="text" id="searchInput" placeholder="Search product..." />
+  </div>
+
+  <main>
+    <section class="products" id="productList"></section>
+
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Shop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
